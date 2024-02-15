@@ -76,18 +76,19 @@ body{
             </div>
             <!-- life score -->
             <div class="flex justify-between w-3/4">
-                <button class="flex justify-center gap-2 bg-purple-400 p-3 rounded-full text-white">Life <img src="images/Group 23.svg" alt=""> <span>1</span></button>
-                <button class="flex gap-2 bg-purple-700 p-3 rounded-full text-white">Score<img src="images/monetization_on.png" alt=""> <span>1</span></button>
+                <button class="flex justify-center gap-2 bg-purple-400 p-3 rounded-full text-white">Life <img src="images/Group 23.svg" alt=""> <span  id="life-line">5</span></button>
+                <button class="flex gap-2 bg-purple-700 p-3 rounded-full text-white">Score<img src="images/monetization_on.png" alt=""> <span  id="score-line">0</span></button>
             </div>
          </div>
         </section>
-        <section class="score flex flex-col justify-center items-center min-h-screen hidden">
+        <section id="final-score" class=" flex flex-col justify-center items-center min-h-screen hidden">
             <div class="text-white flex flex-col justify-center items-center h-full border-[5px space-y-2 bg-[#FFFFFF33] p-10 rounded-2xl">
+                <h2 class="text-3xl">Game over !</h2>
                 <h1 class="text-6xl">
                     <span class="font-bold">Score:</span>
-                    <span>14</span>
+                    <span id="total-score">0</span>
                 </h1>
-                <button class="btn">Play Now</button>
+                <button id="btn-playAgain" onclick=" playAgain()" class="btn">Play Now</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
